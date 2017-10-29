@@ -14,21 +14,26 @@
 
 #include <opencv2/opencv.hpp>
 
+#include "book_header.h"
+
 
 
 
 
 int main(int argc, char** argv) {
     
-    using namespace boost::lambda;
-    typedef std::istream_iterator<int> in;
- 
-    std::cout << "CV_VERSION = " << CV_VERSION << std::endl;
+//    using namespace boost::lambda;
+//    typedef std::istream_iterator<int> in;
+//
+//    std::cout << "CV_VERSION = " << CV_VERSION << std::endl;
+//
+//    std::for_each(
+//                  in(std::cin), in(), std::cout << (_1 * 3) << " " );
+
     
-    std::for_each(
-                  in(std::cin), in(), std::cout << (_1 * 3) << " " );
-
-
-    return 0;
+    std::string filename;
+    std::cin >> filename;
+    
+    return example_2_1(filename);
 }
 
