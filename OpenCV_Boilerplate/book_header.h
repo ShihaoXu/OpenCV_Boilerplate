@@ -10,6 +10,7 @@
 #define book_header_h
 
 int example_2_1(std::string filename);
-
+int example_2_3(std::string filename);
+int example_2_4(std::string filename);
 
 #endif /* book_header_h */
