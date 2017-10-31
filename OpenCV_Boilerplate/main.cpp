@@ -34,13 +34,10 @@ int main(int argc, char** argv) {
     std::cout << "Using OpenCV version " << CV_VERSION << std::endl;
     // std::cout << cv::getBuildInformation();
 
-    
-    std::string filename(argv[1]);
-
 //    return example_2_1(filename);
-//    example_2_3(filename);
-    
-    
-    return example_2_4(filename);
+//    return example_2_3(filename);
+//    return example_2_4(filename);
+    drawing_examples();
+    return 0;
 }
 

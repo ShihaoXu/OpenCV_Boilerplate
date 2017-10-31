@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A43064151FA7CD2400978E40 /* example_2_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A43064131FA7CD2400978E40 /* example_2_3.cpp */; };
 		A43064171FA8BFC500978E40 /* example_2_4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A43064161FA8BFC500978E40 /* example_2_4.cpp */; };
+		A43064191FA8D8E300978E40 /* drawing_examples.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A43064181FA8D8E300978E40 /* drawing_examples.cpp */; };
 		A4E7AF921FA540F0003D9A83 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4E7AF911FA540F0003D9A83 /* main.cpp */; };
 		A4E7AF9A1FA61461003D9A83 /* example_2_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4E7AF991FA61461003D9A83 /* example_2_1.cpp */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		A43064131FA7CD2400978E40 /* example_2_3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = example_2_3.cpp; sourceTree = "<group>"; };
 		A43064161FA8BFC500978E40 /* example_2_4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = example_2_4.cpp; sourceTree = "<group>"; };
+		A43064181FA8D8E300978E40 /* drawing_examples.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = drawing_examples.cpp; sourceTree = "<group>"; };
 		A4E7AF8E1FA540F0003D9A83 /* OpenCV_Boilerplate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenCV_Boilerplate; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E7AF911FA540F0003D9A83 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A4E7AF981FA6143E003D9A83 /* book_header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = book_header.h; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				A4E7AF991FA61461003D9A83 /* example_2_1.cpp */,
 				A43064131FA7CD2400978E40 /* example_2_3.cpp */,
 				A43064161FA8BFC500978E40 /* example_2_4.cpp */,
+				A43064181FA8D8E300978E40 /* drawing_examples.cpp */,
 			);
 			path = OpenCV_Boilerplate;
 			sourceTree = "<group>";
@@ -130,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A43064191FA8D8E300978E40 /* drawing_examples.cpp in Sources */,
 				A43064171FA8BFC500978E40 /* example_2_4.cpp in Sources */,
 				A43064151FA7CD2400978E40 /* example_2_3.cpp in Sources */,
 				A4E7AF921FA540F0003D9A83 /* main.cpp in Sources */,
