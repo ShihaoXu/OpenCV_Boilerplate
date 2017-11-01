@@ -14,5 +14,6 @@ int example_2_3(std::string filename);
 int example_2_4(std::string filename);
 
 void drawing_examples();
+void functors();
 
 #endif /* book_header_h */

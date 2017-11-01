@@ -43,7 +43,7 @@ void drawing_examples() {
     
     /* cv::ellipse()    */
     cv::ellipse(frame, cv::Point(100, 50), cv::Size(20, 10), -45, 90, 360, CV_RGB(255, 0, 0));
-    
+
     
     /* cv::ellipse2Poly(), cv::polylines()  */
     std::vector<cv::Point> point_vec;
@@ -55,7 +55,7 @@ void drawing_examples() {
 
     cv::putText(frame, "some Text", cv::Point(20, 20), cv::FONT_HERSHEY_PLAIN, 1.0, CV_RGB(0, 0, 255));
     
-
+    
     
     
     cv::imshow("drawing", frame);
