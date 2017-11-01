@@ -63,6 +63,7 @@ void functors() {
     cv::imshow("PCA Data Set", canvas);
     cvWaitKey();
     
+
     //   2.4 Back projection.
     cv::Mat backMat(points);
     pcaObj.backProject(proj_points, backMat);
@@ -72,6 +73,7 @@ void functors() {
     cv::imshow("PCA Data Set", canvas);
     cvWaitKey();
     
+
     cv::destroyWindow("PCA Data Set");
     
 }
