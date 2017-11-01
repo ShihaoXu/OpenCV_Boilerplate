@@ -32,12 +32,14 @@ int main(int argc, char** argv) {
 
     std::cout << "CWD is: " << getcwd(NULL, 255) << std::endl << std::endl;
     std::cout << "Using OpenCV version " << CV_VERSION << std::endl;
-    // std::cout << cv::getBuildInformation();
+ 
+// std::cout << cv::getBuildInformation();
 
 //    return example_2_1(filename);
 //    return example_2_3(filename);
 //    return example_2_4(filename);
-    drawing_examples();
+//    drawing_examples();
+    functors();
     return 0;
 }
 
