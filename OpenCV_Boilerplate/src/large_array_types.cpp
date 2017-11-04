@@ -21,9 +21,6 @@ void large_array_types() {
         int32_t data[2][2] = { 1, 2, 3, 4 };
         cv::Mat m(2, 2, CV_32SC1, data);
 
-        // display the result
-//        showMatrix("data", m);
-
     }
     
     // N-ary Matrix Iterator: cv::NAryMatIterator
@@ -89,12 +86,30 @@ void large_array_types() {
                 
             }
 
-            for(int i = 0; i < it.size; i++) {
-                std::cout << (int)ptrs[2][i] << ", ";
-            }
+            std::cout << "After element-wise power: dst\n" << dst;
         }
-        // TODO: store the result in dst.
-
+    }
+    
+    // Example 4-3 Printint all of the nonzero elements of a sparse array
+    {
+        int size[] = {10, 10};
+        cv::SparseMat sm( 2, size, CV_32F );
+        for( int i = 0; i < 10; i++ ) {
+            int idx[2];
+            idx[0] = size[0] * rand();
+            idx[1] = size[1] * rand();
+            sm.ref<float>(idx) += 1.0f;
+        }
+        
+        // Print out the nonzero elements
+        //
+        cv::SparseMatConstIterator_<float> it = sm.begin<float>();
+        cv::SparseMatConstIterator_<float> it_end = sm.end<float>();
+        
+        for(; it != it_end; ++it) {
+            const cv::SparseMat::Node * node = it.node();
+            printf(" (%3d, %3d) %f\n", node->idx[0], node->idx[1], *it);
+        }
     }
     
     
